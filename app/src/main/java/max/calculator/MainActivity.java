@@ -177,7 +177,7 @@ public class MainActivity extends AppCompatActivity {
 
         bSolve.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View v){ //add solve method
+            public void onClick(View v){
                 try{
                     double x = solve(textInput.getText()+"");
                     textResult.setText( (Double.isInfinite(x) || Double.isNaN(x)) ? "You can't divide by zero" : x+"");
